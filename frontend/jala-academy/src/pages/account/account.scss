@@ -1,0 +1,77 @@
+.body-container {
+    background: rgb(243, 225, 248);
+    width: fit-content;
+
+
+    .details-container {
+        align-items: center;
+        padding: 20px;
+
+        mark {
+            background-color: yellow;
+            color: black;
+
+        }
+
+        strong {
+            margin-top: 20px;
+        }
+
+        p {
+            line-height: 10px;
+        }
+    }
+
+
+    .acoount-container {
+        width: fit-content;
+        height: fit-content;
+        background-color: rgb(212, 252, 212);
+        padding: 40px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+
+        .email-input {
+            width: 450px;
+            margin-top: 50px;
+        }
+
+        .password-input {
+            width: 450px;
+        }
+
+        .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+
+            .forgot-link label {
+                cursor: pointer;
+            }
+        }
+
+        .sign-button {
+            margin: 20px;
+            margin-left: 45%;
+        }
+
+        .or-adminlogin {
+            margin-left: 40%;
+            line-height: 10px;
+
+            a {
+                margin-left: 6%;
+            }
+        }
+
+
+    }
+
+    .footer-container {
+        margin-top: 40px;
+        background-color: rgb(215, 235, 243);
+        padding: 10px;
+        margin: 20px;
+    }
+}
