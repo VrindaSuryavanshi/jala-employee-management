@@ -23,7 +23,7 @@ const DataTable = ({ props }) => {
   const getEmpNames = async () => {
     try {
       const setEmpName = await axios.get(
-        "http://localhost:8086/api/v1/employee/getAll"
+        "http://localhost:8082/api/v1/employee/getAll"
       );
 
       const result = setEmpName.data;

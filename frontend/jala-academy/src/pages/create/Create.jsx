@@ -103,7 +103,7 @@ const Create = () => {
 
   async function load() {
     const result = await axios.get(
-      "http://localhost:8086/api/v1/employee/getAll"
+      "http://localhost:8082/api/v1/employee/getAll"
     );
     setAllEmployee(result.data);
     //   console.log(result.data);
@@ -113,7 +113,7 @@ const Create = () => {
     event.preventDefault();
 
     try {
-      await axios.post("http://localhost:8086/api/v1/employee/save", {
+      await axios.post("http://localhost:8082/api/v1/employee/save", {
         first_name: first_name,
         last_name: last_name,
         mobile: mobile,

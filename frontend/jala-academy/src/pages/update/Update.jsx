@@ -110,7 +110,7 @@ const Update = () => {
 
   async function load() {
     const result = await axios.get(
-      "http://localhost:8086/api/v1/employee/search/" + _id
+      "http://localhost:8082/api/v1/employee/search/" + _id
     );
     const empData = result.data;
     setUpdateEmployee(empData);
@@ -127,7 +127,7 @@ const Update = () => {
   async function update(event) {
     event.preventDefault();
     try {
-      await axios.put("http://localhost:8086/api/v1/employee/update/" + _id, {
+      await axios.put("http://localhost:8082/api/v1/employee/update/" + _id, {
         first_name: first_name,
         last_name: last_name,
         mobile: mobile,

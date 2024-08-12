@@ -29,7 +29,7 @@ const Search = () => {
   const load = async () => {
     setLoading(true);
     await axios
-      .get("http://localhost:8086/api/v1/employee/getAll")
+      .get("http://localhost:8082/api/v1/employee/getAll")
       .then((res) => {
         setEmpData(res.data);
         setRecords(res.data);
@@ -79,7 +79,7 @@ const Search = () => {
   };
 
   const handleDelete = async (_id) => {
-    await axios.delete("http://localhost:8086/api/v1/employee/delete/" + _id);
+    await axios.delete("http://localhost:8082/api/v1/employee/delete/" + _id);
     toast.success("Record Deleted Successfully!", {
       position: "top-center",
       autoClose: 5000,

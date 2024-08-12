@@ -8,8 +8,8 @@ import Home from "../home/Home";
 const Account = () => {
   const navigate = useNavigate();
 
-  const [email, setEmail] = useState("training@jalaacademy.com");
-  const [password, setPassword] = useState("jobprogram");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
   const [isLog, setisLog] = useState(false);
 

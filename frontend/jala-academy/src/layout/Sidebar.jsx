@@ -59,12 +59,7 @@ const Sidebar = () => {
           link: "/autocomplete",
           subitems: [],
         },
-        {
-          title: "Collapsible Content",
-          icon: FaHandPointRight,
-          link: "/collapsible",
-          subitems: [],
-        },
+       
         {
           title: "Images",
           icon: FaHandPointRight,
@@ -105,6 +100,12 @@ const Sidebar = () => {
           title: "iFrames",
           icon: FaHandPointRight,
           link: "/iframes",
+          subitems: [],
+        },
+        {
+          title: "Collapsible Content",
+          icon: FaHandPointRight,
+          link: "/collapsible",
           subitems: [],
         },
       ],

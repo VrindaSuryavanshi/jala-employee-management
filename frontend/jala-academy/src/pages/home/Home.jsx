@@ -17,7 +17,7 @@ const Home = ({ logoutFn }) => {
         <Header logoutFn={logoutFn} />
         <div className="flex">
           <Sidebar />
-          <div className="w-full bg-gray-900 text-white h-fit text-center">
+          <div className="w-full bg-gray-900 text-white h-full text-center">
             <div className="my-20 m-2">
               <h1 className="text-4xl my-4">Welcome to JALA Academy</h1>
 
