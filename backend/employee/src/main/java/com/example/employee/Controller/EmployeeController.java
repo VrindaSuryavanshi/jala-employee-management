@@ -32,7 +32,7 @@ public class EmployeeController {
             }
 
             @PutMapping(value = "/update/{id}")
-         private Employee updateEmployee(@RequestBody Employee employee ,@PathVariable(name = "id")  String id){
+           private Employee updateEmployee(@RequestBody Employee employee ,@PathVariable(name = "id")  String id){
                 employee.set_id(id);
                 employeeServices.saveOrUpdate(employee);
                 return employee;
